@@ -1,0 +1,6 @@
+{
+  "name": "Catálogo Gamarra Inteligente",
+  "description": "Catálogo de ropa de Gamarra con asistente de voz cordial en español y validador de pagos multimodal Yape/BCP por IA.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

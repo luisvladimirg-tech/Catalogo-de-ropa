@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+  
+  --color-gamarra-pink: #e0115f;
+  --color-gamarra-pink-light: #ffebf2;
+  --color-gamarra-blue: #0088cc;
+  --color-gamarra-cyan: #00aaff;
+  --color-gamarra-lightbg: #f8fafc;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.2s infinite ease-in-out;
+}
+
+@keyframes soundwave {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1.2); }
+}
+
+.wave-bar {
+  animation: soundwave 1s ease-in-out infinite;
+}
+
+.wave-bar-1 { animation-delay: 0.1s; }
+.wave-bar-2 { animation-delay: 0.3s; }
+.wave-bar-3 { animation-delay: 0.5s; }
+.wave-bar-4 { animation-delay: 0.2s; }
+.wave-bar-5 { animation-delay: 0.4s; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-gamarra-lightbg);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
